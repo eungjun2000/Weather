@@ -1,0 +1,14 @@
+body{
+  background: #4568DC;
+  background: -webkit-linear-gradient(to top, #B06AB3, #4568DC);
+  background: linear-gradient(to top, #B06AB3, #4568DC);
+}
+
+.app {
+  text-align: center;
+}
+
+.roomAreaGrid{
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px #884485;
+}
