@@ -8,7 +8,6 @@ import Sunny from "./images/Sunny.png"
 import SunnyCloud from "./images/SunnyCloudy.png"
 import Sunny_back from "./images/Back_sunny.jpg"
 import Windy from "./images/Windy.png"
-import Windy_back from "./images/Back_Windy.webp"
 import Cloudy from "./images/Cloudy.png"
 import Cloudy_back from "./images/Back_cloudy.jpg"
 
