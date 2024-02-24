@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls , Environment, Html } from "@react-three/drei"
+import { OrbitControls , Environment, Html, useAnimations } from "@react-three/drei"
 import {Room} from "./components/Room";
+import {Astronaut} from "./components/Astronaut"
 import ThunderEffect from "./weatherEffects/ThunderEffect";
 import RainEffect from "./weatherEffects/RainEffect";
 import SnowEffect from "./weatherEffects/SnowEffect"
@@ -41,7 +42,7 @@ const RoomArea = () => {
 
     return(
         <Canvas
-            style={{width: "100%", height: "97.7vh", borderRadius:"15px"}}
+            style={{width: "100%", height: "100%", borderRadius:"15px"}}
             camera={{fov:30, position: [7, 7, 7]}}>
             <OrbitControls
                 enableZoom={false}
@@ -50,6 +51,7 @@ const RoomArea = () => {
             />  
             <Environment preset="sunset" background blur={0.5}/>
             <Room scale={0.9}/>
+            <Astronaut scale={0.9}/>
             <Html fullscreen>
                 <div className="whatsTheWeatherToday">Hello, It's {weather} Today.</div>
                 {roomBack === "ThunderEffect" && <ThunderEffect/>}

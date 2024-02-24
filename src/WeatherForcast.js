@@ -35,8 +35,6 @@ const WeatherForcast = () => {
                 `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${WEATHER_KEY}&units=metric`
             );
 
-            //console.log(response.data.list)
-
             var dateDict = {};
             const dateArr = [];
             for(let i = 0; i < response.data.list.length; i++){
